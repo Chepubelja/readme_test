@@ -130,6 +130,28 @@ where:
 ### sentinel.py
 > Sub-module for getting information about tiles which cover counties.
 
+This file provides 2 functions:
+- ___get_intersection()___ - for retrieving names of tiles from Sentinel that intersects with the state from input state `.shp` (shapefile).
+- ___county_tiles_mapping()___ - for tiles-counties mapping and vice verse.
+
+---
+
+```python 
+def get_intersection(path_to_state, path_to_sentinel):
+```
+where:
+- __path_to_state__ is the path to the state `.shp` (shapefile).
+- __path_to_sentinel__ is the path to Sentinel all world tiles `.shp` (shapefile).
+
+```python 
+def county_tiles_mapping(shapes_path, counties_path, needed_counties):
+```
+where:
+- __shapes_path__ is the path to Sentinel all world tiles `.shp` (shapefile).
+- __counties_path__ is path to the folder with all needed counties shapefiles.
+- __needed_counties__ is the list of names of needed counties.
+
+
 ### Statistic.ipynb
 > Script for calculating statisics of counties.
 
