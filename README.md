@@ -3,11 +3,11 @@ This code (ХЗ ЯК ЦЕ НАЗВАТИ) contains 3 main packages ([Features](#
 
 ## Features
 > Package contains two sub-modules:
-- [features.py](#featurespy) - for calculating features.
-- [feature_vectors.py](#feature_vectorspy) - for transforming features into feature vectors.
+- [features.py](#featurespy) - Sub-module for generating various vegetation, soil and water indices.
+- [feature_vectors.py](#feature_vectorspy) - Sub-modulde for combining features into feature vectors for further feature extraction from points or satellite images for both training and prediction stages.
 
 ### features.py
-asdasd
+
 ### feature_vectors.py
 asdasd
 
