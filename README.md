@@ -146,11 +146,15 @@ where:
 - __latlon__ is list with latitude and longitude.
 - __zone__ is Zone Number, which  is represented with global map numbers of an UTM Zone Numbers Map.
 
+---
+
 ```python 
 def norm_band(band):
 ```
 where:
 - __band__ is Numpy array (band) of the satellite image.
+
+---
 
 ```python 
 def mask_padding(mask, padding):
