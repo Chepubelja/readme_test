@@ -7,7 +7,16 @@ This code (ХЗ ЯК ЦЕ НАЗВАТИ) contains 3 main packages ([Features](#
 - [feature_vectors.py](#featurespy) - for transforming features into feature vectors.
 
 ### features.py
-> Sub-module for generating various vegetation, soil and water indices.
+> Sub-module for generating various vegetation, soil and water indices by appling linear and non-linear manipulations on satellite bands.
+
+All indices are calculated in format:
+```javascript
+def index_name(bands, **args):
+    # Code for calculating index
+    return calculated_index, index_name
+```
+where bands is the dictionary of satellite image bands and **args are additional parameters used for index calculation.
+
 ### feature_vectors.py
 > Sub-module for combining features into feature vectors for further feature extraction from points or satellite images for both training and prediction stages.
 
