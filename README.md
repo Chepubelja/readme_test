@@ -148,7 +148,7 @@ def county_tiles_mapping(shapes_path, counties_path, needed_counties):
 ```
 where:
 - __shapes_path__ is the path to Sentinel all world tiles `.shp` (shapefile).
-- __counties_path__ is path to the folder with all needed counties shapefiles.
+- __counties_path__ is the path to the folder with all needed counties shapefiles.
 - __needed_counties__ is the list of names of needed counties.
 
 
