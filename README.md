@@ -41,6 +41,7 @@ def extract_new_features(period_name, bands, target, zone):
 
 ### elevation.py
 > Sub-module for processing binary masks of mountains.
+
 This file provides function that returns binary mask of area for which elevation is lower than threshold:
 
 ```python 
