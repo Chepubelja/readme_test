@@ -132,9 +132,9 @@ where:
 > Sub-module with small helper functions for different steps of pipeline.
 
 This file provides 3 helper functions:
-- *latlon_to_pixel()* - for transforming latitude and longitude to the corresponding pixels on the satellite image.
-- *norm_band()* - for normalizing input numpy array to interval [0-1].
-- *mask_padding()* - for dilating areas in the mask filled with 1.
+- ___latlon_to_pixel()___ - for transforming latitude and longitude to the corresponding pixels on the satellite image.
+- ___norm_band()___ - for normalizing input numpy array to interval [0-1].
+- ___mask_padding()___ - for dilating areas in the mask filled with 1.
 
 ```python 
 def latlon_to_pixel(transform, latlon, zone):
