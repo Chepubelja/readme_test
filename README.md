@@ -22,7 +22,7 @@ where __bands__ is the dictionary of satellite image bands and __**args__ are ad
 ### feature_vectors.py
 > Sub-module for combining features into feature vectors for further feature extraction from points or satellite images for both training and prediction stages.
 
-This file provides two feature functions:
+*This file provides two feature functions:*
 - __Version 0.1__ - for extracting NDVI feature for point or image.
 ```python 
 def extract_one_channel_ndvi(period_name, bands, target):
