@@ -98,7 +98,7 @@ where:
 - [Statistic.ipynb](#Statisticipynb) - for calculating statisics of counties.
 
 ### calculate_acreage.py
-> Sub-module for generating various vegetation, soil and water indices by appling linear and non-linear manipulations on satellite bands.
+> Sub-module for calculating acreage of fields for different probability thresholds using confidence masks.
 
 This file provides 2 functions:
 - ___calculate_acreage()___ - for calculating acreage for the mask with the given threshold.
@@ -122,16 +122,16 @@ where:
 - __silent__ is the boolean flag for printing the acreage with the given threshold.
 
 ### format_csv.py
-> Sub-module for generating various vegetation, soil and water indices by appling linear and non-linear manipulations on satellite bands.
+> Sub-module for processing points given by China team.
 
 ### make_evolution_sentinel.py
-> Sub-module for generating various vegetation, soil and water indices by appling linear and non-linear manipulations on satellite bands.
+> Sub-module for generating evolution of fields images.
 
 ### sentinel.py
-> Sub-module for generating various vegetation, soil and water indices by appling linear and non-linear manipulations on satellite bands.
+> Sub-module for getting information about tiles which cover counties.
 
 ### Statistic.ipynb
-> Sub-module for generating various vegetation, soil and water indices by appling linear and non-linear manipulations on satellite bands.
+> Script for calculating statisics of counties.
 
 ## Utils
 > Package contains four sub-modules:
