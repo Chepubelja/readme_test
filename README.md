@@ -47,7 +47,7 @@ where:
 - __bands__ is the dictionary of satellite image bands in format `{"B1": np.array, "B2": np.array, "B3": np.array}`.
 - __target__ is either `'image'` or `'point'`.
 - __zone__ is the string of zone name (*for e.g.* `'SentinelSouthZone1'`).
-- - -
+---
 ## Geoutils
 > Package contains four sub-modules:
 - [elevation.py](#elevationpy) - for processing binary masks of mountains.
@@ -73,10 +73,20 @@ where:
 > Sub-module for generating various vegetation, soil and water indices by appling linear and non-linear manipulations on satellite bands.
 
 ### natural.py
-> Sub-module for generating various vegetation, soil and water indices by appling linear and non-linear manipulations on satellite bands.
+> Sub-module for processing nature water parks areas from `'natural.shp'`.
+
+This file provides function that returns binary mask of areas which are not water parks:
+
+```python 
+def get_nature_mask(self, match_path, erosion):
+```
+where:
+- __self__ is the instance of `class Natural(Vars)`.
+- __match_path__ is the path to satellite image file in `GeoTIFF` format (*for e.g.* `"sentinel_image.tif"`).
+- __erosion__ is the level of erosion (*for e.g.* `2`).
 
 ### stitching.py
-> Sub-module for generating various vegetation, soil and water indices by appling linear and non-linear manipulations on satellite bands.
+> Sub-module for stitching original and predicted tiles into counties.
 
 ## Scripts
 > Package contains four sub-modules:
