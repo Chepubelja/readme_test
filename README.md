@@ -24,6 +24,7 @@ where __bands__ is the dictionary of satellite image bands and __**args__ are ad
 
 This file provides two functions for feature extraction:
 
+---
 ___Version 0.1___ - for extracting point or image NDVI features.
 ```python 
 def extract_one_channel_ndvi(period_name, bands, target):
@@ -33,6 +34,7 @@ where:
 - __bands__ is the dictionary of satellite image bands in format `{"B1": np.array, "B2": np.array, "B3": np.array}`.
 - __target__ is either `'image'` or `'point'`.
 
+---
 
 ___Version 0.4___ - for extracting point or image vegetation features of specific zone.
 ```python 
@@ -43,7 +45,7 @@ where:
 - __bands__ is the dictionary of satellite image bands in format `{"B1": np.array, "B2": np.array, "B3": np.array}`.
 - __target__ is either `'image'` or `'point'`.
 - __zone__ is the string of zone name (*for e.g.* `'SentinelSouthZone1'`).
-
+---
 ## Geoutils
 > Package contains four sub-modules:
 - [elevation.py](#elevationpy) - for processing binary masks of mountains.
