@@ -13,7 +13,7 @@ All indices are calculated in format:
 ```python
 def index_name(bands, **args):
     # Code for calculating index
-    return calculated_index, index_name
+    return calculated_index, "Index name"
 ```
 where bands is the dictionary of satellite image bands and **args are additional parameters used for index calculation.
 
