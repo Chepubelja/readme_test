@@ -1,5 +1,5 @@
 # Code explanation
-This code (ХЗ ЯК ЦЕ НАЗВАТИ) contains 3 main packages (Features, Geoutils, Scripts), which are described below.
+This code (ХЗ ЯК ЦЕ НАЗВАТИ) contains 3 main packages ([Features](#Features), [Geoutils](#Geoutils), [Scripts](#Scripts)), which are described below.
 
 ## Features
 > Package contains two sub-modules:
