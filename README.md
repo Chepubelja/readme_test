@@ -150,7 +150,7 @@ where:
 def norm_band(band):
 ```
 where:
-- __band__ is Numpy array (band) of the satellite image.
+- __band__ is one band *(Numpy array)* of the satellite image.
 
 ```python 
 def mask_padding(mask, padding):
