@@ -47,7 +47,7 @@ where:
 - __bands__ is the dictionary of satellite image bands in format `{"B1": np.array, "B2": np.array, "B3": np.array}`.
 - __target__ is either `'image'` or `'point'`.
 - __zone__ is the string of zone name (*for e.g.* `'SentinelSouthZone1'`).
----
+- - -
 ## Geoutils
 > Package contains four sub-modules:
 - [elevation.py](#elevationpy) - for processing binary masks of mountains.
