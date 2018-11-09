@@ -15,7 +15,9 @@ def index_name(bands, **args):
     # Code for calculating index
     return calculated_index, "Index name"
 ```
-where __bands__ is the dictionary of satellite image bands and __**args__ are additional parameters used for index calculation. 
+where:
+- __bands__ is the dictionary of satellite image bands in format `{"B1": np.array, "B2": np.array, "B3": np.array}`.
+- __**args__ are additional parameters used for index calculation (*for e.g.* `'gamma'`, `'alpha'`, `'beta'`). 
 
 *Further these feature functions are used in [feature_vectors.py](#featurespy).*
 
