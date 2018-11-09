@@ -1,10 +1,10 @@
 # Code explanation
-> This code (ХЗ ЯК ЦЕ НАЗВАТИ) contains 3 main packages (Features, Geoutils, Scripts), which are described below.
+This code (ХЗ ЯК ЦЕ НАЗВАТИ) contains 3 main packages (Features, Geoutils, Scripts), which are described below.
 
 ## Features
 > Package contains two sub-modules:
-- [features.py](#features.py) - for calculating features.
-- [feature_vectors.py](#feature_vectors.py) - for transforming features into feature vectors.
+- [features.py](#featurespy) - for calculating features.
+- [feature_vectors.py](#feature_vectorspy) - for transforming features into feature vectors.
 
 ### features.py
 asdasd
