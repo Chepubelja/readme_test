@@ -33,7 +33,24 @@ def extract_new_features(period_name, bands, target, zone):
 ```
 
 ## Geoutils
-> Block for working with satellite data.
+> Package contains four sub-modules:
+- [elevation.py](#elevationpy) - for processing binary masks of mountains.
+- [masking.py](#maskingpy) - for processing prediction result masks.
+- [natural.py](#naturalpy) - for processing nature water parks areas from `natural.shp`.
+- [stitching.py](#stitchingpy) - for stitching original and predicted tiles into counties.
+
+### elevation.py
+> Sub-module for generating various vegetation, soil and water indices by appling linear and non-linear manipulations on satellite bands.
+
+### masking.py
+> Sub-module for generating various vegetation, soil and water indices by appling linear and non-linear manipulations on satellite bands.
+
+### natural.py
+> Sub-module for generating various vegetation, soil and water indices by appling linear and non-linear manipulations on satellite bands.
+
+### stitching.py
+> Sub-module for generating various vegetation, soil and water indices by appling linear and non-linear manipulations on satellite bands.
+
 ## Scripts
 
 # Satelite image segmenation using Mask R-CNN
