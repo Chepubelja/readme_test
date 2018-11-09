@@ -63,7 +63,10 @@ This file provides function that returns binary mask of area for which elevation
 ```python 
 def get_elevation_mask(self, match_path, thresh):
 ```
-where __match_path__ is the path to file 
+where:
+- __self__ is the instance of `class Elevator(Vars)`.
+- __match_path__ is the path to satellite image file in `GeoTIFF` format (*for e.g.* `"sentinel_image.tif"`).
+- __thresh__ is the threshold (*for e.g.* `1100`).
 
 
 ### masking.py
