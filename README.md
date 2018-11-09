@@ -129,4 +129,31 @@ where:
 > Sub-module for generating various vegetation, soil and water indices by appling linear and non-linear manipulations on satellite bands.
 
 ### utils.py
-> Sub-module for generating various vegetation, soil and water indices by appling linear and non-linear manipulations on satellite bands.
+> Sub-module with small helper functions for different steps of pipeline.
+
+This file provides 3 helper functions:
+- *latlon_to_pixel()* - for transforming latitude and longitude to the corresponding pixels on the satellite image.
+- *norm_band()* - for normalizing input numpy array to interval [0-1].
+- *mask_padding()* - for dilating areas in the mask filled with 1.
+
+```python 
+def latlon_to_pixel(transform, latlon, zone):
+```
+where:
+- __transform__ .
+- __latlon__ .
+- __zone__ .
+
+```python 
+def norm_band(band):
+```
+where:
+- __band__ .
+
+```python 
+def mask_padding(mask, padding):
+```
+where:
+- __mask__ .
+- __padding__ .
+
