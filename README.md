@@ -9,9 +9,9 @@ This code (ХЗ ЯК ЦЕ НАЗВАТИ) contains 3 main packages ([Features](#
 - [feature_vectors.py](#featurespy) - for transforming features into feature vectors.
 
 ### features.py
-Sub-module for generating various vegetation, soil and water indices.
+> Sub-module for generating various vegetation, soil and water indices.
 ### feature_vectors.py
-Sub-module for combining features into feature vectors for further feature extraction from points or satellite images for both training and prediction stages.
+> Sub-module for combining features into feature vectors for further feature extraction from points or satellite images for both training and prediction stages.
 
 
 ## Geoutils
