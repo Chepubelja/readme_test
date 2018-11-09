@@ -1,5 +1,5 @@
 # Code explanation
-This code (ХЗ ЯК ЦЕ НАЗВАТИ) contains 3 main packages ([Features](#Features), [Geoutils](#Geoutils), [Scripts](#Scripts)), which are described below.
+This code (ХЗ ЯК ЦЕ НАЗВАТИ) contains 4 main packages ([Features](#Features), [Geoutils](#Geoutils), [Scripts](#Scripts), [Utils](#Utils)), which are described below.
 
 ## Features
 > Package contains two sub-modules:
@@ -60,6 +60,27 @@ where __match_path__ is the path to file
 > Sub-module for generating various vegetation, soil and water indices by appling linear and non-linear manipulations on satellite bands.
 
 ## Scripts
+
+## Utils
+> Package contains four sub-modules:
+- [azureUtil.py](#azureUtilpy) - for working with Azure Datalake.
+- [sentinel_downloader.py](#sentinel_downloaderpy) - for blablabla.
+- [SQLhelper.py](#SQLhelperpy) - for working with SQL-database.
+- [utils.py](#utilspy) - small helper functions for different steps of pipeline.
+
+### azureUtil.py
+> Sub-module for generating various vegetation, soil and water indices by appling linear and non-linear manipulations on satellite bands.
+
+### sentinel_downloader.py
+> Sub-module for generating various vegetation, soil and water indices by appling linear and non-linear manipulations on satellite bands.
+
+### SQLhelper.py
+> Sub-module for generating various vegetation, soil and water indices by appling linear and non-linear manipulations on satellite bands.
+
+### utils.py
+> Sub-module for generating various vegetation, soil and water indices by appling linear and non-linear manipulations on satellite bands.
+
+
 
 # Satelite image segmenation using Mask R-CNN
 
