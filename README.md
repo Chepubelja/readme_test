@@ -136,24 +136,26 @@ This file provides 3 helper functions:
 - ___norm_band()___ - for normalizing input numpy array to interval [0-1].
 - ___mask_padding()___ - for dilating areas in the mask filled with 1.
 
+---
+
 ```python 
 def latlon_to_pixel(transform, latlon, zone):
 ```
 where:
-- __transform__ .
-- __latlon__ .
-- __zone__ .
+- __transform__ is gdal GeoTransform of the satelite image.
+- __latlon__ is list with latitude and longitude.
+- __zone__ is Zone Number, which  is represented with global map numbers of an UTM Zone Numbers Map.
 
 ```python 
 def norm_band(band):
 ```
 where:
-- __band__ .
+- __band__ is Numpy array (band) of the satellite image.
 
 ```python 
 def mask_padding(mask, padding):
 ```
 where:
-- __mask__ .
-- __padding__ .
+- __mask__ is the input binary mask.
+- __padding__ is the number of times dilation is applied.
 
