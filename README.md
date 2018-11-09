@@ -30,7 +30,7 @@ ___Version 0.1___ - for extracting point or image NDVI features.
 def extract_one_channel_ndvi(period_name, bands, target):
 ```
 where:
-- __period_name__ is the string that specifies date where satellite images where taken.
+- __period_name__ is the string that specifies date where satellite images where taken (*for e.g.* `'20180603'`).
 - __bands__ is the dictionary of satellite image bands in format `{"B1": np.array, "B2": np.array, "B3": np.array}`.
 - __target__ is either `'image'` or `'point'`.
 
@@ -41,7 +41,7 @@ ___Version 0.4___ - for extracting point or image vegetation features of specifi
 def extract_new_features(period_name, bands, target, zone):
 ```
 where:
-- __period_name__ is the string that specifies date where satellite images where taken.
+- __period_name__ is the string that specifies date where satellite images where taken (*for e.g.* `'20180603'`).
 - __bands__ is the dictionary of satellite image bands in format `{"B1": np.array, "B2": np.array, "B3": np.array}`.
 - __target__ is either `'image'` or `'point'`.
 - __zone__ is the string of zone name (*for e.g.* `'SentinelSouthZone1'`).
