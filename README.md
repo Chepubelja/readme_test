@@ -100,6 +100,27 @@ where:
 ### calculate_acreage.py
 > Sub-module for generating various vegetation, soil and water indices by appling linear and non-linear manipulations on satellite bands.
 
+This file provides 2 functions:
+- ___calculate_acreage()___ - for calculating acreage for the mask with the given threshold.
+- ___calculate_counties_acreage()___ - for calculating acreage for all confidence masks of the county with the given threshold.
+
+---
+
+```python 
+def calculate_acreage(mask, threshold):
+```
+where:
+- __mask__ is the path to the confidence mask.
+- __threshold__ is the probability threshold (for e.g. `0.5`, `0.75`, `0.8`).
+
+```python 
+def calculate_counties_acreage(results_path, threshold, silent=False):
+```
+where:
+- __results_path__ is the path to the folder with confidence masks of the needed county.
+- __threshold__ is the probability threshold (for e.g. `0.5`, `0.75`, `0.8`).
+- __silent__ is the boolean flag for printing the acreage with the given threshold.
+
 ### format_csv.py
 > Sub-module for generating various vegetation, soil and water indices by appling linear and non-linear manipulations on satellite bands.
 
