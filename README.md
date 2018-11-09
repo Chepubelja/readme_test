@@ -27,7 +27,7 @@ This file provides two feature functions:
 ```python 
 def extract_one_channel_ndvi(period_name, bands, target):
 ```
-- __Version 0.4__ - for extracting point or image vegeatation indices features of specific zone.
+- __Version 0.4__ - for extracting point or image vegetation features of specific zone.
 ```python 
 def extract_new_features(period_name, bands, target, zone):
 ```
