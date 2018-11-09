@@ -70,7 +70,7 @@ where:
 
 
 ### masking.py
-> Sub-module for generating various vegetation, soil and water indices by appling linear and non-linear manipulations on satellite bands.
+> Sub-module for processing prediction result masks.
 
 ### natural.py
 > Sub-module for processing nature water parks areas from `'natural.shp'`.
@@ -120,13 +120,45 @@ where:
 - [utils.py](#utilspy) - small helper functions for different steps of pipeline.
 
 ### azureUtil.py
-> Sub-module for generating various vegetation, soil and water indices by appling linear and non-linear manipulations on satellite bands.
+> Sub-module for working with Azure Datalake.
+
+This file provides 3 functions:
+- ___download_from_azure()___ - for downloading original tiles data from Azure Datalake.
+- ___upload_to_azure()___ - for uploading data folder to Azure Datalake.
+- ___download_preprocessed_tile()___ - if there is preprocessed tile data, downloads it from Azure Datalake.
+
+---
+
+```python 
+def download_from_azure(self, tile, dates):
+```
+where:
+- __self__ is the instance of `class AzureDownloaderUploader(Vars)`.
+- __tile__ is the list containing tile name in format `["44","TVG"]`.
+- __dates__ is the list of needed periods.
+
+```python 
+def upload_to_azure(self, in_folder, out_folder):
+```
+where:
+- __self__ is the instance of `class AzureDownloaderUploader(Vars)`.
+- __in_folder__ is the path to local folder you want to upload.
+- __out_folder__ is the path to Azure folder, where you want to save __in_folder__.
+
+```python 
+def download_preprocessed_tile(self, local_folder, azure_folder):
+```
+where:
+- __self__ is the instance of `class AzureDownloaderUploader(Vars)`.
+- __local_folder__ is the path to local folder, where you want to save preprocessed tile data.
+- __azure_folder__ is the path to Azure folder to download from.
+
 
 ### sentinel_downloader.py
 > Sub-module for generating various vegetation, soil and water indices by appling linear and non-linear manipulations on satellite bands.
 
 ### SQLhelper.py
-> Sub-module for generating various vegetation, soil and water indices by appling linear and non-linear manipulations on satellite bands.
+> Sub-module for working with SQL-database.
 
 ### utils.py
 > Sub-module with small helper functions for different steps of pipeline.
