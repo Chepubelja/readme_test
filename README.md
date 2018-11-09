@@ -10,7 +10,7 @@ This code (ХЗ ЯК ЦЕ НАЗВАТИ) contains 3 main packages ([Features](#
 > Sub-module for generating various vegetation, soil and water indices by appling linear and non-linear manipulations on satellite bands.
 
 All indices are calculated in format:
-```javascript
+```python
 def index_name(bands, **args):
     # Code for calculating index
     return calculated_index, index_name
