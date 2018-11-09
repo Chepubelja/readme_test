@@ -23,7 +23,7 @@ where __bands__ is the dictionary of satellite image bands and __**args__ are ad
 > Sub-module for combining features into feature vectors for further feature extraction from points or satellite images for both training and prediction stages.
 
 This file provides two functions for feature extraction:
-* __Version 0.1__ - for extracting point or image NDVI features.
+___Version 0.1___ - for extracting point or image NDVI features.
 ```python 
 def extract_one_channel_ndvi(period_name, bands, target):
 ```
@@ -32,8 +32,9 @@ where:
 - __bands__ is the dictionary of satellite image bands in format `{"B1": np.array, "B2": np.array, "B3": np.array}`.
 - __target__ is either `'image'` or `'point'`.
 
+---
 
-- __Version 0.4__ - for extracting point or image vegetation features of specific zone.
+___Version 0.4___ - for extracting point or image vegetation features of specific zone.
 ```python 
 def extract_new_features(period_name, bands, target, zone):
 ```
