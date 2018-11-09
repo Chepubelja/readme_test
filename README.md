@@ -1,4 +1,4 @@
-# Code explanation
+# Code explanation :full_moon_with_face:
 This code (ХЗ ЯК ЦЕ НАЗВАТИ) contains 4 main packages ([Features](#Features), [Geoutils](#Geoutils), [Scripts](#Scripts), [Utils](#Utils)), which are described below.
 
 ## Features
@@ -28,7 +28,7 @@ This file provides two functions for feature extraction:
 def extract_one_channel_ndvi(period_name, bands, target):
 ```
 where:
-:heavy_minus_sign: __period_name__ is the string that specifies date where satellite images where taken
+- __period_name__ is the string that specifies date where satellite images where taken
 - __bands__ is the dictionary of satellite image bands in format `{"B1": np.array, "B2": np.array, "B3": np.array}`
 - __target__ is either  
 
