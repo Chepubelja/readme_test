@@ -40,7 +40,14 @@ def extract_new_features(period_name, bands, target, zone):
 - [stitching.py](#stitchingpy) - for stitching original and predicted tiles into counties.
 
 ### elevation.py
-> Sub-module for generating various vegetation, soil and water indices by appling linear and non-linear manipulations on satellite bands.
+> Sub-module for processing binary masks of mountains.
+This file provides function that returns binary mask of area for which elevation is lower than threshold:
+
+```python 
+def get_elevation_mask(self, match_path, thresh):
+```
+where __match_path__ is the path to file 
+
 
 ### masking.py
 > Sub-module for generating various vegetation, soil and water indices by appling linear and non-linear manipulations on satellite bands.
