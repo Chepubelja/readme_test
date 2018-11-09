@@ -84,6 +84,20 @@ where __match_path__ is the path to file
 > and one `.ipynb` script:
 - [Statistic.ipynb](#Statisticipynb) - for calculating statisics of counties.
 
+### calculate_acreage.py
+> Sub-module for generating various vegetation, soil and water indices by appling linear and non-linear manipulations on satellite bands.
+
+### format_csv.py
+> Sub-module for generating various vegetation, soil and water indices by appling linear and non-linear manipulations on satellite bands.
+
+### make_evolution_sentinel.py
+> Sub-module for generating various vegetation, soil and water indices by appling linear and non-linear manipulations on satellite bands.
+
+### sentinel.py
+> Sub-module for generating various vegetation, soil and water indices by appling linear and non-linear manipulations on satellite bands.
+
+### Statistic.ipynb
+> Sub-module for generating various vegetation, soil and water indices by appling linear and non-linear manipulations on satellite bands.
 
 ## Utils
 > Package contains four sub-modules:
