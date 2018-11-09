@@ -60,6 +60,14 @@ where __match_path__ is the path to file
 > Sub-module for generating various vegetation, soil and water indices by appling linear and non-linear manipulations on satellite bands.
 
 ## Scripts
+> Package contains four sub-modules:
+- [calculate_acreage.py](#calculate_acreagepy) - for calculating acreage of fields for different probability thresholds using confidence masks.
+- [format_csv.py](#format_csvpy) - for processing points given by China team.
+- [make_evolution_sentinel.py](#make_evolution_sentinelpy) - for generating evolution of fields images.
+- [sentinel.py](#sentinelpy) - for getting information about tiles which cover counties.
+> and one `.ipynb` script:
+- [Statistic.ipynb](#Statisticipynb) - for calculating statisics of counties.
+
 
 ## Utils
 > Package contains four sub-modules:
