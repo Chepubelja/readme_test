@@ -173,6 +173,12 @@ where:
 ### Statistic.ipynb
 > Script for calculating statisics of counties.
 
+Using this script you can calculate number of points for each crop ___(for e.g. Cotton, Corn, Tomato)___ from the input `.csv` and group them:
+- by counties
+- by path
+- by row
+- by path/row
+
 ## Utils
 > Package contains four sub-modules:
 - [azureUtil.py](#azureUtilpy) - for working with Azure Datalake.
