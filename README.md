@@ -123,6 +123,25 @@ where:
 ### format_csv.py
 > Sub-module for processing points given by China team.
 
+This file provides 2 functions:
+- ___dms2dec()___ - for converting coordinate values from Degrees Minutes Seconds (DMS) to Decimal Degrees (DD).
+- ___combine_files()___ - for __ХЗ ДЛЯ ЧОГО__.
+
+---
+
+```python 
+def dms2dec(dms_str):
+```
+where:
+- __dms_str__ is the string with coordinate values in Degrees Minutes Seconds (DMS) format.
+
+```python 
+def combine_files(path, out):
+```
+where:
+- __path__ is the input path to the folder with `.csv` files.
+- __out__ is the path to `.csv`, where results would be written to.
+
 ### make_evolution_sentinel.py
 > Sub-module for generating evolution of fields images.
 
