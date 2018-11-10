@@ -101,8 +101,8 @@ where:
 > Sub-module for calculating acreage of fields for different probability thresholds using confidence masks.
 
 This file provides 2 functions:
-___calculate_acreage()___ - for calculating acreage for the mask with the given threshold.
-
+- ___calculate_acreage()___ - for calculating acreage for the mask with the given threshold.
+- ___calculate_counties_acreage()___ - for calculating acreage for all confidence masks of the county with the given threshold.
 ---
 
 ```python 
@@ -112,8 +112,6 @@ where:
 - __mask__ is the path to the confidence mask.
 - __threshold__ is the probability threshold (for e.g. `0.5`, `0.75`, `0.8`).
 
-
-___calculate_counties_acreage()___ - for calculating acreage for all confidence masks of the county with the given threshold.
 ```python 
 def calculate_counties_acreage(results_path, threshold, silent=False):
 ```
@@ -133,7 +131,7 @@ where:
 
 This file provides 2 functions:
 - ___get_intersection()___ - for retrieving names of tiles from Sentinel that intersects with the state from input state `.shp` (shapefile).
-- ___county_tiles_mapping()___ - for tiles-counties mapping and vice verse.
+- ___county_tiles_mapping()___ - for tiles-counties mapping and vice versa.
 
 ---
 
@@ -199,7 +197,7 @@ where:
 
 
 ### sentinel_downloader.py
-> Sub-module for generating various vegetation, soil and water indices by appling linear and non-linear manipulations on satellite bands.
+> Sub-module for __Bla bla bla TODO.__
 
 ### SQLhelper.py
 > Sub-module for working with SQL-database.
