@@ -180,8 +180,8 @@ Using this script you can calculate number of points for each crop ___(for e.g. 
 - by path/row
 
 To have this script working right, except `points.csv`, you should have:
-- folder with all counties shapefiles (in script it is `Counties Xinjiang`).
-- shapefile with all paths/rows in the world (in script it is `wrs2_descending.shp`).
+- folder with all counties shapefiles (in the script it is `Counties Xinjiang`).
+- shapefile with all paths/rows in the world (in the script it is `wrs2_descending.shp`).
 
 ## Utils
 > Package contains four sub-modules:
