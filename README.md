@@ -145,6 +145,19 @@ where:
 ### make_evolution_sentinel.py
 > Sub-module for generating evolution of fields images.
 
+This file provides 3 main functions:
+- ___create_binary_mask()___ - for creating prediction binary mask with the threshold `0.5` and saving result in files with `GeoTIFF` format in both Black-and-White and RGB modes.
+- ___create_confidence_mask()___ - for creating prediction confidence mask by combining 5 binary prediction masks at 5 different thresholds `[0.5, 0.6, 0.7, 0.8, 0.9]` and saving result in files with `GeoTIFF` format in both Black-and-White and RGB modes.
+- ___evaluate()___ - for creating  .
+
+---
+
+```python 
+def ds_connect(self):
+```
+where:
+- __self__ is the instance of `class DSDB(Vars)`.
+
 ### sentinel.py
 > Sub-module for getting information about tiles which cover counties.
 
