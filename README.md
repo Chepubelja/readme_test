@@ -173,11 +173,15 @@ where:
 ### Statistic.ipynb
 > Script for calculating statisics of counties.
 
-Using this script you can calculate number of points for each crop ___(for e.g. Cotton, Corn, Tomato)___ from the input `.csv` and group them:
+Using this script you can calculate number of points for each crop ___(for e.g. Cotton, Corn, Tomato)___ from the input `points.csv` and group them:
 - by counties
 - by path
 - by row
 - by path/row
+
+To have this script working right, except `points.csv`, you should have:
+- folder with all counties shapefiles (in script it is `Counties Xinjiang`).
+- shapefile with all paths/rows in the world (in script it is `wrs2_descending.shp`).
 
 ## Utils
 > Package contains four sub-modules:
