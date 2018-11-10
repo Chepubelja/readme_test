@@ -110,14 +110,14 @@ def calculate_acreage(mask, threshold):
 ```
 where:
 - __mask__ is the path to the confidence mask.
-- __threshold__ is the probability threshold (for e.g. `0.5`, `0.75`, `0.8`).
+- __threshold__ is the probability threshold *(for e.g.* `0.5`, `0.75`, `0.8`).
 
 ```python 
 def calculate_counties_acreage(results_path, threshold, silent=False):
 ```
 where:
 - __results_path__ is the path to the folder with confidence masks of the needed county.
-- __threshold__ is the probability threshold (for e.g. `0.5`, `0.75`, `0.8`).
+- __threshold__ is the probability threshold *(for e.g.* `0.5`, `0.75`, `0.8`).
 - __silent__ is the boolean flag for printing the acreage with the given threshold.
 
 ### format_csv.py
@@ -230,6 +230,37 @@ where:
 
 ### SQLhelper.py
 > Sub-module for working with SQL-database.
+
+This file provides 3 functions:
+- ___ds_connect()___ - for creating SQLAlchemy `Engine` and returning `Connection` object of this Engine .
+- ___insert_estimation()___ - for inserting new county data in the DB.
+- ___test_load_from_dest_db()___ - for testing if needed table would be retrieved from DB and SQL query would be executed correctly.
+
+---
+
+```python 
+def ds_connect(self):
+```
+where:
+- __self__ is the instance of `class DSDB(Vars)`.
+
+```python 
+def insert_estimation(self, county, period, area, clouds, avg_clouds, img_name):
+```
+where:
+- __self__ is the instance of `class DSDB(Vars)`.
+- __county__ is the name of the county *(for e.g.* `Korla`).
+- __period__ is the ordinal number of period *(for e.g. `7`*).
+- __area__ is the float number representing the estimated area for county *(for e.g. `13001.04`*).
+- __clouds__ is the level of clouds *(for e.g.* `9`).
+- __avg_clouds__ is the average level of clouds *(for e.g.* `3`).
+- __img_name__ is the url for the image.
+
+```python 
+def test_load_from_dest_db(self):
+```
+where:
+- __self__ is the instance of `class DSDB(Vars)`
 
 ### utils.py
 > Sub-module with small helper functions for different steps of pipeline.
