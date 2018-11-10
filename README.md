@@ -148,15 +148,32 @@ where:
 This file provides 3 main functions:
 - ___create_binary_mask()___ - for creating prediction binary mask with the threshold `0.5` and saving result in files with `GeoTIFF` format in both Black-and-White and RGB modes.
 - ___create_confidence_mask()___ - for creating prediction confidence mask by combining 5 binary prediction masks at 5 different thresholds `[0.5, 0.6, 0.7, 0.8, 0.9]` and saving result in files with `GeoTIFF` format in both Black-and-White and RGB modes.
-- ___evaluate()___ - for creating  .
+- ___evaluate()___ - for evaluating prediction results of the model (calculating predicted acreage) for the choosen county and saving both binary and confidence masks.
 
 ---
 
 ```python 
-def ds_connect(self):
+def create_binary_mask(self, name):
 ```
 where:
-- __self__ is the instance of `class DSDB(Vars)`.
+- __self__ is the instance of `class ShapeMasker(Elevator, Natural)`.
+- __name__ is the output name for the binary mask.
+
+```python 
+def create_confidence_mask(self, name):
+```
+where:
+- __self__ is the instance of `class ShapeMasker(Elevator, Natural)`.
+- __name__ is the output name for the confidence mask.
+
+```python 
+def evaluate(self, county, model_version):
+```
+where:
+- __self__ is the instance of `class ShapeMasker(Elevator, Natural)`.
+- __county__ is the name of the county *(for e.g.* `'Aksu'`).
+- __model_version__ is the string representing current version of model *(for e.g.* `'0.1'`).
+
 
 ### sentinel.py
 > Sub-module for getting information about tiles which cover counties.
