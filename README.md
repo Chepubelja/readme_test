@@ -101,8 +101,7 @@ where:
 > Sub-module for calculating acreage of fields for different probability thresholds using confidence masks.
 
 This file provides 2 functions:
-- ___calculate_acreage()___ - for calculating acreage for the mask with the given threshold.
-- ___calculate_counties_acreage()___ - for calculating acreage for all confidence masks of the county with the given threshold.
+___calculate_acreage()___ - for calculating acreage for the mask with the given threshold.
 
 ---
 
@@ -113,6 +112,8 @@ where:
 - __mask__ is the path to the confidence mask.
 - __threshold__ is the probability threshold (for e.g. `0.5`, `0.75`, `0.8`).
 
+
+___calculate_counties_acreage()___ - for calculating acreage for all confidence masks of the county with the given threshold.
 ```python 
 def calculate_counties_acreage(results_path, threshold, silent=False):
 ```
